@@ -1,0 +1,55 @@
+$Card-BG: #36373C;
+$Organg-color: #CF5C36;
+.Bg{
+    background-color: $Organg-color;
+    margin: 5px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 50px;
+    max-width: 100px;
+}
+
+
+
+
+/*logo*/
+.LogoNext{
+    text-align: center;
+}
+
+
+
+
+/*Tekst buttons*/
+.texttholder{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1px;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    
+}
+
+
+
+.aTags{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+
+
+  }
+  .content {
+    
+    margin: 0 auto;
+  }
+  
+  /*home button*/
+
+  .homebutton{
+    text-align: center;
+    margin-top: 50px;
+    bottom: 0;
+  }

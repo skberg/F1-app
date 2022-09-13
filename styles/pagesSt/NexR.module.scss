@@ -1,0 +1,45 @@
+$bg-color: #36373C;
+
+.holder{
+ 
+}
+.gird{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 10px;
+  max-width: fit-content;
+  margin: 10px auto;
+  max-width: 1000px;
+ }
+ .card{
+   background-color: #36373C;
+   color: white;
+   min-height: 200px;
+ }
+
+ .cardgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  grid-gap: 2px;
+  max-width: fit-content;
+  margin: 10px auto;
+  
+ }
+ .cardspacing{
+    background-color: $bg-color;
+    color: azure;
+    list-style-type: none;
+    padding: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    margin: auto;
+    justify-items: center;
+ }
+ .Sidediv{
+  background-color: #1B9AAA;
+  width: 500px;
+  
+  position: fixed;
+  right: 0;
+  height: 100%;
+ }

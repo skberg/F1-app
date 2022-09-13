@@ -1,0 +1,39 @@
+$bg-color: #36373C;
+
+.holder{
+ 
+}
+ .TopHolder{
+  
+  display: grid;
+  grid-template-columns:  1fr;
+  margin: 15px auto;
+  text-align: center;
+
+ }
+
+ .Input{
+  width: 300px;
+  background-color: #36373C;
+
+
+ }
+ 
+ .cardgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-gap: 2px;
+  max-width: fit-content;
+  margin: 10px auto;
+  
+ }
+ .cardspacing{
+    background-color: $bg-color;
+    color: azure;
+    list-style-type: none;
+    padding: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    margin: auto;
+    justify-items: center;
+ }

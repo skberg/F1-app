@@ -3,41 +3,53 @@ import Image from 'next/image'
 
 import Link from 'next/link'
 
+/*Styling*/
 
 import HomeEments from '../styles/Home.module.scss'
-import card from '../styles/Card.module.scss'
-import RaceData from '../comp/RaceData'
+import bg from '../styles/BG.module.scss'
+
+
+/*Componets*/ 
+
+import NextMainRace from '../comp/Web_box/NextRaceMain_box'
+import TopDR from '../comp/Web_box/TopDriver_box'
+import News from '../comp/Web_box/News_box'
+import Navbutton from '../comp/Web_box/Navbutton_box'
+import HeidingBox from '../comp/Web_box/Heding_box'
+
+
+
 
 export default function Home({}) {
 
  
 
   return (
-    <div>
-  
-          
+    <> 
+    <Head>
+      <title>Downshift | Home</title>
 
-            <div className={HomeEments.cards}>
-                <div className={HomeEments.cardgrid}>
-                  <div className={HomeEments.s}><p className={HomeEments.Text}>News</p></div>
-                  <div className={HomeEments.w}><p className={HomeEments.Text}>Teams</p></div>
-                 
-                
+    </Head>
+
+            
+            <div >
+              <div className={bg.Topbox}>
+              <HeidingBox />
+              <TopDR  />
+              </div>
+             
+                <div className={bg.midBox}>
+                 <Navbutton />
                 </div>
-              
-              </div>
-              <div className={HomeEments.Conentebox}>
-                <p className={HomeEments.ConenteboxHeding}>
-                up cumming races</p>
-                    <div className={HomeEments.CHolder}>
-                      <div className={HomeEments.CContet}>1</div>
-                      <div className={HomeEments.CContet}>2</div>
-                    </div>
-              </div>
-              <div className={HomeEments.Conentebox}>
-                <p className={HomeEments.ConenteboxHeding}>Blogs</p>
+            <div className={bg.BottomBox}>
+              <NextMainRace />
+              <News />  
               </div>
 
-    </div>
+                
+            </div>
+       </>
   )
 }
+
+    

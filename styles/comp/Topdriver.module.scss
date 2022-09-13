@@ -1,0 +1,25 @@
+
+$bg-color: #36373C;
+$Card-Tekst: #CF5C36;
+
+.bg{
+  
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    padding: 5px;
+    height: 100%;
+    min-width: max-content;
+    background-color: $bg-color;
+}
+
+.images{
+   
+    border-radius: 10px;
+
+}
+.cont{
+    background-color: #1B9AAA;
+    border-radius: 10px;
+}

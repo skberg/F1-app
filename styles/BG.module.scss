@@ -1,11 +1,40 @@
 $bg-color: #3B3D4A;
 
 
-.cont{
+
+.cont {  
     background-color: $bg-color;
-    margin: 10px;
-    min-height: 100vh;
-    border-radius: 8px;
-    
-    
+    margin: 5px;
+   
+    border-radius: 10px;
+        min-height: 99vh;
+    display: grid;
+  
+   
+  }
+
+  
+
+  .Topbox{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr ;
+    min-height: 40%;
+  }
+  
+  .midBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+    margin-top: 20px;
+    min-height: 350px;
+    margin-bottom: -20px;
 }
+  
+  .BottomBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    min-height: 400px;
+  }
+ 
+
+
+ 

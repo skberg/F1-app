@@ -5,43 +5,19 @@ $Card-Tekst: #CF5C36;
   $Card-BG: #36373C;
 }
 
-
-
-.cards {
- 
-  
-  color: aliceblue;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-
- 
- 
-}
-
-.cardgrid{
-  display: grid;
-  grid-template-columns: auto auto;
-
-  justify-content: center;
-
+.Cards{
+  height: 55%;
+  min-width: 200px;
+   background-color: #36373C;
+   margin: 10px;
+   position:relative;
 }
 
 
-
-
-
-  .cardspacing{
-    background-color: $Card-BG;
-    min-width: 200px;
-    height: auto;
-    width: 300px;
-  
-    padding: 15px;
-    justify-content: center;
- 
-    a{
-      color: white;
-    }
-    
-  }
-
+.Text{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;  
+  padding: 5px;
+  color: #CF5C36;
+}
