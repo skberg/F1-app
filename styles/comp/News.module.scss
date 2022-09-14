@@ -1,8 +1,10 @@
-$bg-color: #36373C;
-$Card-Tekst: #CF5C36;
 
-
+@use '../colors/_color.scss' as c;
+@use '../GlobStalying/_border.scss' as b;
 .bg{
-        background-color: $bg-color;
-        margin: 15px;
+        background-color: c.$Card-Color;
+        margin: 5px;
+        border-radius: b.$border-rad;
 }
+
+

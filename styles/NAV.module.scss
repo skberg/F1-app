@@ -1,9 +1,12 @@
-$Card-BG: #36373C;
-$Organg-color: #CF5C36;
+
+@use './colors/color' as c;
+
+@use './GlobStalying/_border.scss' as b;
+
 .Bg{
-    background-color: $Organg-color;
+    background-color: c.$Card-Tekst;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: b.$border-rad;
     display: grid;
     grid-template-columns: 1fr;
     line-height: 50px;

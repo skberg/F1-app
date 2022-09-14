@@ -7,10 +7,7 @@ import useSWR from 'swr'
 
 
 
-  const Driver = ({   }) => {
-
-    
-
+  const Driver = ({}) => {
 
     const fetcher = url => fetch(url).then(r => r.json())
     const { data, error } = useSWR('https://formula-1-standings.p.rapidapi.com/standings/drivers?rapidapi-key=9b15aed536mshb3682c458af5202p161c8bjsna0b6108ebd4b', fetcher)
@@ -33,7 +30,6 @@ import useSWR from 'swr'
     
             </Head>
 
-
                 <div className={Style.holder}>
                     <div className={Style.TopHolder} >
                         
@@ -46,7 +42,6 @@ import useSWR from 'swr'
                     <div className={Style.cardgrid}>
 
                     {reaces.map((Results, i) => (
- 
 
                         <div  key={i}>
                                                

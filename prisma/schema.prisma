@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+
+
+model DriverStanding{
+  id String @id @default(cuid())
+  Driver_standing String
+  driver_points String
+
+}
+
+model TeamsStanding{
+  id String @id @default(cuid())
+  Teams_standing String
+  Teams_points String
+
+}
+model driver{
+  id String @id @default(cuid())
+  driver_name String
+  driver_number Int
+  driver_points Int
+  driver_age Int
+  driver_Teams String
+  driver_podium String
+  driver_country String
+  driver_height String
+  driver_pfb String
+  driver_img String
+
+}
+model Teams{
+  id String @id @default(cuid())
+  team_name String
+  team_points String
+  racing_drivers String
+  driver_img String
+  team_nas String
+
+}
+model track{
+  id String @id @default(cuid())
+  track_name String
+  track_date String
+  track_map String
+  track_nas String
+}
+

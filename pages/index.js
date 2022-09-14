@@ -18,11 +18,28 @@ import Navbutton from '../comp/Web_box/Navbutton_box'
 import HeidingBox from '../comp/Web_box/Heding_box'
 
 
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient();
+
+export async function getServerSideProps() {
+  const stuff = await prisma.driver.findMany()
+  const stuff2 = await prisma.Teams.findMany()
+  return {
+    props: { 
+      test: stuff,
+      jeff: stuff2
+    }, // will be passed to the page component as props
+  }
+}
 
 
-export default function Home({}) {
+
+export default function Home({test,jeff}) {
 
  
+console.log(test)
+console.log(jeff)
 
   return (
     <> 

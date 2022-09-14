@@ -1,11 +1,12 @@
-$bg-color: #36373C;
-$Card-Tekst: #CF5C36;
+@use '../colors/_color.scss' as c;
 
 
 .bg{
-        background-color: $bg-color;
+        background-color: c.$Card-Color;
         margin: 10px;
         border-radius: 10px;
         color: white;
         padding: 5px;
+        max-height: 300px;
+
 }
